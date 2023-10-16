@@ -2,11 +2,6 @@ body{
     margin: 0;
 }
 
-ion-icon{
-    font-size: 25px;
-    margin-bottom: -3px;
-}
-
 img{
     height: 100px;
     width: 100px;
@@ -25,6 +20,7 @@ button{
     border-radius: 20px;
     padding: 10px 20px;
     color: white;
+    font-weight: bold;
 }
 
 .container{
@@ -65,7 +61,7 @@ h2{
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 25px;
-    background-color: rgb(160, 210, 255);
+    background-color: rgb(189, 222, 251);
     padding: 15px 30px;
     padding-bottom: 30px;
     /* height: 1000px; */
@@ -102,7 +98,8 @@ input{
     background-color: rgb(215, 215, 215);
     border-radius: 10px;
     max-width: 900px;
-    
+    height: 23px;
+    text-align: center;
 }
 
 .header .bell{
@@ -119,6 +116,10 @@ input{
     display: flex;
     align-items: center;
     gap: 30px;
+}
+
+.info > p{
+    margin-bottom: -15px;
 }
 
 .header .buttons{
@@ -148,6 +149,7 @@ input{
     border-radius: 10px;
     border-left: 7px orange solid;
     padding: 10px;
+    position: relative;
     /* height: min-content; */
 }
 
@@ -170,6 +172,17 @@ input{
     padding: 30px;
     font-size: large;
     border-radius: 10px;
+}
+
+.A-item{
+    font-size: .9rem;
+    padding: 10px;
+    padding-top: 15px;
+    border-bottom: 1px solid grey;
+}
+
+.A-item:last-child{
+    border: none;
 }
 
 .A-item > p{
@@ -201,7 +214,7 @@ input{
 }
 
 .t > p, .t > h4{
-    margin: 0;
+    margin: 4px;
 }
 
 .t > p{
@@ -211,5 +224,24 @@ input{
 .T-item > img{
     height: 60px;
     width: 60px;
-    margin-right: 20px;
+    margin-right: 15px;
+    margin-left: 20px;
+}
+
+ion-icon{
+    font-size: 25px;
+    margin-bottom: -4px;
+}
+
+h2 > ion-icon{
+    margin-bottom: -1px;
+}
+
+.icons {
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    gap: 20px;
+    right: 20px;
+    bottom: 20px;
 }
