@@ -168,7 +168,7 @@ input{
     grid-template-rows: repeat(auto-fit, minmax(60px, 1fr));
     background-color: #fff;
     padding: 30px;
-    font-size: small;
+    font-size: large;
     border-radius: 10px;
 }
 
